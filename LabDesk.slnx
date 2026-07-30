@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/SeedWork/">
+    <Project Path="src/SeedWork/LabDesk.SeedWork.Application/LabDesk.SeedWork.Application.csproj" />
+    <Project Path="src/SeedWork/LabDesk.SeedWork.Domain/LabDesk.SeedWork.Domain.csproj" />
+    <Project Path="src/SeedWork/LabDesk.SeedWork.Infrastructure/LabDesk.SeedWork.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>
