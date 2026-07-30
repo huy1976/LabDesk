@@ -1,26 +1,25 @@
-# 🚀 LabDesk - Architecture & Folder Structure
+# 📦 LabDesk - SeedWork Module
 
-Tài liệu hướng dẫn cấu trúc dự án và chức năng các thư mục trong solution **LabDesk**. Dự án được thiết kế theo kiến trúc **Clean Architecture / Domain-Driven Design (DDD)**.
+Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong module **SeedWork**.
 
 ---
 
-## 📐 Sơ đồ kiến trúc (Architecture Diagram)
+## 📁 Cấu trúc thư mục & Link tài liệu
 
-```mermaid
-graph TD
-    subgraph LabDesk Solution
-        App[LabDesk.SeedWork.Application]
-        Dom[LabDesk.SeedWork.Domain]
-        Infra[LabDesk.SeedWork.Infrastructure]
-        
-        App -->|Sử dụng / Phụ thuộc| Dom
-        Infra -->|Triển khai / Implement| Dom
-    end
+* 🔶 **`LabDesk.SeedWork.Application/`** — [🔗 Xem Docs Application](https://your-link-here.com)
+  * 📁 `Behaviors/` — [🔗 Link Docs](https://your-link-here.com) *(MediatR Pipeline Behaviors)*
+  * 📁 `CQRS/` — [🔗 Link Docs](https://your-link-here.com) *(Commands, Queries & Handlers)*
+  * 📁 `Interfaces/` — [🔗 Link Docs](https://your-link-here.com) *(Application Interfaces)*
+  * 📁 `Results/` — [🔗 Link Docs](https://your-link-here.com) *(Result Pattern Wrapper)*
+  * 📄 `DependencyInjection.cs` *(Đăng ký IoC/DI Container)*
 
-    subgraph Infrastructure Detail [LabDesk.SeedWork.Infrastructure.Persistence]
-        BaseDB[BaseDbContext.cs]
-        Interceptor[DispatchDomainEventsInterceptor.cs]
-        
-        BaseDB .->|Implement| IUnitOfWork[IUnitOfWork]
-        Interceptor .->|Bắt sự kiện trước khi Save| BaseDB
-    end
+* 🔷 **`LabDesk.SeedWork.Domain/`** — [🔗 Xem Docs Domain](https://your-link-here.com)
+  * 📁 `Interfaces/` — [🔗 Link Docs](https://your-link-here.com) *(Core Interfaces: IRepository, IUnitOfWork)*
+  * 📄 `AggregateRoot.cs` *(Base class Aggregate Root)*
+  * 📄 `Entity.cs` *(Base class Entity)*
+  * 📄 `ValueObject.cs` *(Base class Value Object)*
+
+* 🟢 **`LabDesk.SeedWork.Infrastructure/`** — [🔗 Xem Docs Infrastructure](https://your-link-here.com)
+  * 📁 `Persistence/` — [🔗 Link Docs](https://your-link-here.com)
+    * 📄 `BaseDbContext.cs` *(EF Core DbContext)*
+    * 📄 `DispatchDomainEventsInterceptor.cs` *(Interceptor bắn Domain Events)*
