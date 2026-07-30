@@ -5,6 +5,8 @@ Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong mod
 ---
 
 ## 📁 Cấu trúc thư mục & Link tài liệu
+ **`LabDesk.SeedWork`** — [🔗 Xem Docs Application](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
+
 
 * 🔶 **`LabDesk.SeedWork.Application/`** — [🔗 Xem Docs Application](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
   * 📁 `Behaviors/` — [🔗 Link Docs](https://your-link-here.com) *(MediatR Pipeline Behaviors)*
