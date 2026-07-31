@@ -10,7 +10,7 @@ Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong mod
 * 🔷 **`LabDesk.SeedWork.Domain/`** — [🔗 Xem Docs Domain][(https://your-link-here.com](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
   * 📁 `Interfaces/` — [🔗 Link Docs](https://your-link-here.com) *(Core Interfaces: IRepository, IUnitOfWork)*
   * 📄 `AggregateRoot.cs` *(Base class Aggregate Root)*
-  * 📄 `Entity.cs` *(Base class Entity)*_[🔗 Xem Docs Domain][(https://your-link-here.com](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
+  * 📄 `Entity.cs` *(Base class Entity)*_[🔗 Xem Docs Domain]((https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
   * 📄 `ValueObject.cs` *(Base class Value Object)*
 
 * 🔶 **`LabDesk.SeedWork.Application/`** — [🔗 Xem Docs Application](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
