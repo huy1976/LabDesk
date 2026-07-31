@@ -12,7 +12,7 @@ Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong mod
   * 📄 `AggregateRoot.cs` 
   * 📄 `Entity.cs` _
   * 📄 `ValueObject.cs` 
-[🔗 Entity/ValueObject/AggregateRoot](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
+<br> ↳[🔗 Entity/ValueObject/AggregateRoot](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
 * 🔶 **`LabDesk.SeedWork.Application/`** — [🔗 Xem Docs Application](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
   * 📁 `Behaviors/` — [🔗 Link Docs](https://your-link-here.com) *(MediatR Pipeline Behaviors)*
   * 📁 `CQRS/` — [🔗 Link Docs](https://your-link-here.com) *(Commands, Queries & Handlers)*
