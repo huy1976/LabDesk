@@ -5,10 +5,10 @@ Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong mod
 ---
 
 ## 📁 Cấu trúc thư mục & Link tài liệu
-* 🏷️ **`LabDesk.SeedWork`** — [🔗 Docs](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
-* 🏷️ **`DomainEvent`** — [🔗 Docs](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation)
-* 🔷 **`LabDesk.SeedWork.Domain/`** — [🔗 Xem Docs Domain][(https://your-link-here.com]
-  * 📁 `Interfaces/` — [🔗 Link Docs](https://your-link-here.com) *(Core Interfaces: IRepository, IUnitOfWork)*
+* 🏷️ **`LabDesk.SeedWork`** — [🔗 SeedWork](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces)
+* 🏷️ **`DomainEvent`** — [🔗 DomainEvent](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation)
+* 🔷 **`LabDesk.SeedWork.Domain/`** 
+  * 📁 `Interfaces/` — [🔗 Link Docs](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design) *(Core Interfaces: IRepository, IUnitOfWork)*
   * 📄 `AggregateRoot.cs` 
   * 📄 `Entity.cs` _
   * 📄 `ValueObject.cs` 
