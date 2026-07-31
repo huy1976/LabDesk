@@ -15,7 +15,7 @@ Tài liệu cấu trúc và liên kết chi tiết cho các thư mục trong mod
 <br> ↳[🔗 Entity/ValueObject/AggregateRoot](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
 * 🔶 **`LabDesk.SeedWork.Application/`** — [🔗Application/Structor/Autofac/CQRS Implement Command,Query,Handler,Mediator,MessageQueue](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api).
   * 📁 `Behaviors/` — [🔗 Link Docs](https://your-link-here.com) *(MediatR Pipeline Behaviors)*
-  * 📁 `CQRS/` *(Commands, Queries & Handlers)* <br> ↳[🔗 Commands](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api), [🔗Query](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/cqrs-microservice-reads).
+  * 📁 `CQRS/` *(Commands, Queries & Handlers)* <br> ↳[🔗 Commands](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api), [🔗Query-Dapper](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/cqrs-microservice-reads).
   * 📁 `Interfaces/` — [🔗 Link Docs](https://your-link-here.com) *(Application Interfaces)*
   * 📁 `Results/` — [🔗 Link Docs](https://your-link-here.com) *(Result Pattern Wrapper)*
   * 📄 `DependencyInjection.cs` *(Đăng ký IoC/DI Container)*
