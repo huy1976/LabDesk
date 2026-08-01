@@ -1,6 +1,6 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="LabDesk.Api/LabDesk.Api.csproj" Id="f995215a-f298-4d14-8a9a-202f28995b49" />
+    <Project Path="src/LabDesk.Api/LabDesk.Api.csproj" />
   </Folder>
   <Folder Name="/src/Module/" />
   <Folder Name="/src/Module/Identity/">
