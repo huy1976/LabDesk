@@ -20,7 +20,7 @@ namespace LabDesk.SeedWork.Application.Behaviors
             _validators = validators;
         }
 
-        public async Task<TRespone> Handle (
+        public async Task<TRespone> Handle(
             TRequest request,
             RequestHandlerDelegate<TRespone> next,
             CancellationToken cancellationToken)

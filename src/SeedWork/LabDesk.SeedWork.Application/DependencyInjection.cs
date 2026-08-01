@@ -14,16 +14,16 @@ public static class DependencyInjection
         this IServiceCollection services,
         Assembly assembly)
     {
-        // 1. Tự động đăng ký MediatR và các Handlers thuộc Assembly truyền vào
+        // Register MediatR and Handlers (DLL)
         services.AddMediatR(cfg =>
         {
             cfg.RegisterServicesFromAssembly(assembly);
 
-            // Đăng ký Pipeline Behavior tự động validate
+            // Register Pipeline Behavior validate
             cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
         });
 
-        // 2. Tự động tìm và đăng ký tất cả FluentValidation Validators
+        // Find and register all FluentValidation Validators
         services.AddValidatorsFromAssembly(assembly);
 
         return services;

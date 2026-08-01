@@ -1,5 +1,14 @@
 <Solution>
-  <Folder Name="/src/" />
+  <Folder Name="/src/">
+    <Project Path="LabDesk.Api/LabDesk.Api.csproj" Id="f995215a-f298-4d14-8a9a-202f28995b49" />
+  </Folder>
+  <Folder Name="/src/Module/" />
+  <Folder Name="/src/Module/Identity/">
+    <Project Path="LabDesk.Modules.Identity.Presentation/LabDesk.Modules.Identity.Presentation.csproj" Id="9a1c8889-358b-4fdc-8416-26226bafff9e" />
+    <Project Path="src/Module/Identity/LabDesk.Modules.Identity.Application/LabDesk.Modules.Identity.Application.csproj" />
+    <Project Path="src/Module/Identity/LabDesk.Modules.Identity.Domain/LabDesk.Modules.Identity.Domain.csproj" />
+    <Project Path="src/Module/Identity/LabDesk.Modules.Identity.Infrastructure/LabDesk.Modules.Identity.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/SeedWork/">
     <Project Path="src/SeedWork/LabDesk.SeedWork.Application/LabDesk.SeedWork.Application.csproj" />
     <Project Path="src/SeedWork/LabDesk.SeedWork.Domain/LabDesk.SeedWork.Domain.csproj" />

@@ -1,8 +1,8 @@
 ﻿using System;
-
-public class Class1
+using MediatR;
+public interface IDomainEvent : INotification
 {
-	public Class1()
-	{
-	}
+    Guid EventId { get; }
+    DateTime OccurredOn { get; }
 }
+    

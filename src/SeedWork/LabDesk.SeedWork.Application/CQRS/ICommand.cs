@@ -8,7 +8,11 @@ namespace LabDesk.SeedWork.Application.Interfaces
 {
     public interface ICommand : IRequest<Result> { }
     public interface ICommand<TRespone> : IRequest<Result<TRespone>> { }
+    public interface ICommandHandler<in TCommand> : IRequestHandler<TCommand, Result>
+    where TCommand : ICommand { }
     public interface ICommandHandler<in TCommand, TRespone> 
         : IRequestHandler<TCommand , Result<TRespone>>
         where TCommand : ICommand<TRespone> { } 
+
+
 }

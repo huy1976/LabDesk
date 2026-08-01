@@ -19,8 +19,11 @@ namespace LabDesk.SeedWork.Application.Results
 
         public static Result Success() => new(true, Error.None);
         public static Result Failure(Error error) => new(false, error);
+        public static Result Failure(string message) => new(false, new Error("General.Error", message));
+
         public static Result<TValue> Success<TValue>(TValue value) => new(value, true, Error.None);
         public static Result<TValue> Failure<TValue>(Error error) => new(default, false, error);
+        public static Result<TValue> Failure<TValue>(string message) => new(default, false, new Error("General.Error", message));
 
     }
     public class Result<TValue> : Result
@@ -36,6 +39,8 @@ namespace LabDesk.SeedWork.Application.Results
         {
             _value = value;
         }
-
+        public static new Result<TValue> Success(TValue value) => new(value, true, Error.None);
+        public static new Result<TValue> Failure(Error error) => new(default, false, error);
+        public static new Result<TValue> Failure(string message) => new(default, false, new Error("General.Error", message));
     }
 }

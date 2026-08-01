@@ -6,11 +6,33 @@ using System.Text;
 
 namespace LabDesk.SeedWork.Infrastructure.Persistence
 {
-    public class BaseDbContext : DbContext, IUnitOfWork
+    public abstract class BaseDbContext : DbContext, IUnitOfWork
     {
-        public Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
+        protected BaseDbContext(DbContextOptions options) : base(options)
         {
-            throw new NotImplementedException();
+        }
+
+        public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Cấu hình bảng OutboxMessage
+            modelBuilder.Entity<OutboxMessage>(builder =>
+            {
+                builder.ToTable("OutboxMessages");
+                builder.HasKey(x => x.Id);
+                builder.Property(x => x.Type).IsRequired().HasMaxLength(255);
+                builder.Property(x => x.Content).IsRequired();
+            });
+        }
+
+        public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
+        {
+            // Khi gọi SaveChangesAsync, Interceptor sẽ tự động chạy để nạp OutboxMessage vào DB
+            var result = await base.SaveChangesAsync(cancellationToken);
+            return result > 0;
         }
     }
 }
